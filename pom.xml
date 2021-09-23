@@ -11,6 +11,7 @@
     <modules>
         <module>Core-Java</module>
         <module>数据结构与算法</module>
+        <module>kafka-demo</module>
     </modules>
 
     <build>
@@ -25,5 +26,13 @@
             </plugin>
         </plugins>
     </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>2.3.3.RELEASE</version>
+        </dependency>
+    </dependencies>
 
 </project>
