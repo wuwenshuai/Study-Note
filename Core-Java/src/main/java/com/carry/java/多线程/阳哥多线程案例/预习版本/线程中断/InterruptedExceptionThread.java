@@ -18,7 +18,7 @@ public class InterruptedExceptionThread {
             while (true) {
                 //
                 try {
-                    Thread.sleep(1000); //中断一个阻塞的线程，会抛出一个异常
+                    Thread.sleep(1000); //中断一个阻塞的线程，会抛出一个InterruptedException异常
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
