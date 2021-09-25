@@ -19,8 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0901df22-72fa-4cfb-95ee-7de5c5970981" name="Default Changelist" comment="阳哥多线程代码fix">
-      <change afterPath="$PROJECT_DIR$/Core-Java/src/main/java/com/carry/java/多线程/阳哥多线程案例/预习版本/生产者消费者/lock版/PrintLockDemo.java" afterDir="false" />
+    <list default="true" id="0901df22-72fa-4cfb-95ee-7de5c5970981" name="Default Changelist" comment="顺序执行">
+      <change afterPath="$PROJECT_DIR$/Core-Java/src/main/java/com/carry/java/多线程/阳哥多线程案例/预习版本/创建线程的方式/CallThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core-Java/src/main/java/com/carry/java/多线程/阳哥多线程案例/预习版本/线程中断/InterruptThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core-Java/src/main/java/com/carry/java/多线程/阳哥多线程案例/预习版本/线程中断/InterruptedExceptionThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core-Java/src/main/java/com/carry/java/多线程/阳哥多线程案例/预习版本/线程的状态演示/ThreadStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,35 +73,48 @@
       <recent name="C:\Users\cw3k\IdeaProjects\Study-Note\Core-Java\src\main\java\com\carry\java\多线程\线程池" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PrintLockDemo">
+  <component name="RunManager" selected="Application.InterruptedExceptionThread">
+    <configuration name="CallThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.carry.java.多线程.阳哥多线程案例.预习版本.创建线程的方式.CallThread" />
+      <module name="Core-Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.carry.java.多线程.阳哥多线程案例.预习版本.创建线程的方式.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterruptThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.carry.java.多线程.阳哥多线程案例.预习版本.线程中断.InterruptThread" />
+      <module name="Core-Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.carry.java.多线程.阳哥多线程案例.预习版本.线程中断.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterruptedExceptionThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.carry.java.多线程.阳哥多线程案例.预习版本.线程中断.InterruptedExceptionThread" />
+      <module name="Core-Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.carry.java.多线程.阳哥多线程案例.预习版本.线程中断.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PrintLockDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.carry.java.多线程.阳哥多线程案例.预习版本.生产者消费者.lock版.PrintLockDemo" />
-      <module name="Core-Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.carry.java.多线程.阳哥多线程案例.预习版本.生产者消费者.lock版.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProdConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.carry.java.多线程.阳哥多线程案例.预习版本.生产者消费者.ProdConsumerDemo" />
-      <module name="Core-Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.carry.java.多线程.阳哥多线程案例.预习版本.生产者消费者.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProdConsumerLockDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.carry.java.多线程.阳哥多线程案例.预习版本.生产者消费者.lock版.ProdConsumerLockDemo" />
       <module name="Core-Java" />
       <extension name="coverage">
         <pattern>
@@ -122,26 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SaleTicket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.carry.java.多线程.阳哥多线程案例.预习版本.卖票.SaleTicket" />
-      <module name="Core-Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.carry.java.多线程.阳哥多线程案例.预习版本.卖票.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InterruptedExceptionThread" />
+        <item itemvalue="Application.InterruptThread" />
+        <item itemvalue="Application.CallThread" />
         <item itemvalue="Application.PrintLockDemo" />
         <item itemvalue="Application.ProdConsumerSyncDemo" />
-        <item itemvalue="Application.ProdConsumerLockDemo" />
-        <item itemvalue="Application.ProdConsumerDemo" />
-        <item itemvalue="Application.SaleTicket" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632378061339</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="顺序执行">
+      <created>1632384804853</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632384804853</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +211,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fix" />
     <MESSAGE value="阳哥多线程代码fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="阳哥多线程代码fix" />
+    <MESSAGE value="顺序执行" />
+    <option name="LAST_COMMIT_MESSAGE" value="顺序执行" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1909" y="105" key="#Inspections" timestamp="1632376679677">
@@ -215,10 +227,11 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="725" y="357" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2048.1112/-2560.-130.2048.1112@0.0.2048.1112" timestamp="1631866728066" />
-    <state x="-1730" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1631784712114">
-      <screen x="-2560" y="-130" width="2048" height="1112" />
+    <state x="830" y="272" key="#com.intellij.ide.util.MemberChooser" timestamp="1632529416257">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="-1730" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1631784712114" />
+    <state x="830" y="272" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112/-2560.-130.2048.1112@0.0.2048.1112" timestamp="1632529416257" />
     <state x="-1780" y="128" key="#xdebugger.evaluate" timestamp="1631757787507">
       <screen x="-2560" y="-130" width="2048" height="1112" />
     </state>
@@ -231,26 +244,26 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112/-2560.-130.2048.1112@0.0.2048.1112" timestamp="1631867889669" />
-    <state width="2005" height="314" key="GridCell.Tab.0.bottom" timestamp="1632379928441">
-      <screen x="-2560" y="-130" width="2048" height="1112" />
+    <state width="2004" height="238" key="GridCell.Tab.0.bottom" timestamp="1632548450187">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="314" key="GridCell.Tab.0.bottom/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1632379928441" />
-    <state width="2005" height="290" key="GridCell.Tab.0.bottom/0.0.2048.1112/-2560.-130.2048.1112@0.0.2048.1112" timestamp="1632378183244" />
-    <state width="2005" height="314" key="GridCell.Tab.0.center" timestamp="1632379928441">
-      <screen x="-2560" y="-130" width="2048" height="1112" />
+    <state width="2004" height="238" key="GridCell.Tab.0.bottom/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1632547342098" />
+    <state width="2004" height="238" key="GridCell.Tab.0.bottom/0.0.2048.1112/-2560.-130.2048.1112@0.0.2048.1112" timestamp="1632548450187" />
+    <state width="2004" height="238" key="GridCell.Tab.0.center" timestamp="1632548450187">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="314" key="GridCell.Tab.0.center/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1632379928441" />
-    <state width="2005" height="290" key="GridCell.Tab.0.center/0.0.2048.1112/-2560.-130.2048.1112@0.0.2048.1112" timestamp="1632378183244" />
-    <state width="2005" height="314" key="GridCell.Tab.0.left" timestamp="1632379928441">
-      <screen x="-2560" y="-130" width="2048" height="1112" />
+    <state width="2004" height="238" key="GridCell.Tab.0.center/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1632547342098" />
+    <state width="2004" height="238" key="GridCell.Tab.0.center/0.0.2048.1112/-2560.-130.2048.1112@0.0.2048.1112" timestamp="1632548450187" />
+    <state width="2004" height="238" key="GridCell.Tab.0.left" timestamp="1632548450187">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="314" key="GridCell.Tab.0.left/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1632379928441" />
-    <state width="2005" height="290" key="GridCell.Tab.0.left/0.0.2048.1112/-2560.-130.2048.1112@0.0.2048.1112" timestamp="1632378183244" />
-    <state width="2005" height="314" key="GridCell.Tab.0.right" timestamp="1632379928441">
-      <screen x="-2560" y="-130" width="2048" height="1112" />
+    <state width="2004" height="238" key="GridCell.Tab.0.left/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1632547342098" />
+    <state width="2004" height="238" key="GridCell.Tab.0.left/0.0.2048.1112/-2560.-130.2048.1112@0.0.2048.1112" timestamp="1632548450187" />
+    <state width="2004" height="238" key="GridCell.Tab.0.right" timestamp="1632548450187">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="314" key="GridCell.Tab.0.right/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1632379928441" />
-    <state width="2005" height="290" key="GridCell.Tab.0.right/0.0.2048.1112/-2560.-130.2048.1112@0.0.2048.1112" timestamp="1632378183244" />
+    <state width="2004" height="238" key="GridCell.Tab.0.right/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1632547342098" />
+    <state width="2004" height="238" key="GridCell.Tab.0.right/0.0.2048.1112/-2560.-130.2048.1112@0.0.2048.1112" timestamp="1632548450187" />
     <state width="2005" height="164" key="GridCell.Tab.1.bottom" timestamp="1632377853460">
       <screen x="-2560" y="-130" width="2048" height="1112" />
     </state>
@@ -275,10 +288,10 @@
       <screen x="-2560" y="-130" width="2048" height="1112" />
     </state>
     <state x="-2098" y="66" key="SettingsEditor/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1631695424447" />
-    <state x="-1943" y="146" key="Vcs.Push.Dialog.v2" timestamp="1632378063519">
+    <state x="-1943" y="146" key="Vcs.Push.Dialog.v2" timestamp="1632384806386">
       <screen x="-2560" y="-130" width="2048" height="1112" />
     </state>
-    <state x="-1943" y="146" key="Vcs.Push.Dialog.v2/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1632378063519" />
+    <state x="-1943" y="146" key="Vcs.Push.Dialog.v2/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1632384806386" />
     <state x="-1741" y="339" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1631840766923">
       <screen x="-2560" y="-130" width="2048" height="1112" />
     </state>
