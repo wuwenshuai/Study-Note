@@ -12,6 +12,7 @@
         <module>Core-Java</module>
         <module>数据结构与算法</module>
         <module>kafka-demo</module>
+        <module>Hadoop</module>
     </modules>
 
     <build>
