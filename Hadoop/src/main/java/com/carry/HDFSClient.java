@@ -35,7 +35,7 @@ public class HDFSClient {
 
         //2. 操作集群
         fileSystem.copyFromLocalFile(
-                new Path("/Users/oldshuai/Desktop/vue电商笔记.md"),
+                new Path("/Users/oldshuai/Desktop/a.txt"),
                 new Path("/"));
 
         //3. 关闭资源
