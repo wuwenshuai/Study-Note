@@ -10,6 +10,7 @@
         <module name="kafka-demo" />
         <module name="数据结构与算法" />
         <module name="Core-Java" />
+        <module name="设计模式" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
