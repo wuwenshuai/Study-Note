@@ -19,13 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0901df22-72fa-4cfb-95ee-7de5c5970981" name="Default Changelist" comment="fix">
-      <change afterPath="$PROJECT_DIR$/Core-Java/src/main/java/com/carry/java/多线程/大厂学院多线程/基础/ThreadDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/设计模式/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="0901df22-72fa-4cfb-95ee-7de5c5970981" name="Default Changelist" comment="fix2">
+      <change afterPath="$PROJECT_DIR$/Core-Java/src/main/java/com/carry/java/多线程/大厂学院多线程/基础/FutureTaskDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-demo/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core-Java/src/main/java/com/carry/java/多线程/大厂学院多线程/基础/ThreadDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Core-Java/src/main/java/com/carry/java/多线程/大厂学院多线程/基础/ThreadDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +38,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1xzisVAEkxQKPm8c7RoUBBRQU8Q" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -76,13 +74,13 @@
       <recent name="C:\Users\cw3k\IdeaProjects\Study-Note\Core-Java\src\main\java\com\carry\java\多线程\线程池" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ThreadDemo">
-    <configuration name="InterruptThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.carry.java.多线程.阳哥多线程案例.预习版本.线程中断.InterruptThread" />
+  <component name="RunManager" selected="Application.FutureTaskDemo">
+    <configuration name="FutureTaskDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.carry.java.多线程.大厂学院多线程.基础.FutureTaskDemo" />
       <module name="Core-Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.carry.java.多线程.阳哥多线程案例.预习版本.线程中断.*" />
+          <option name="PATTERN" value="com.carry.java.多线程.大厂学院多线程.基础.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FutureTaskDemo" />
         <item itemvalue="Application.ThreadDemo" />
         <item itemvalue="Application.TestTemplateDemo" />
         <item itemvalue="Application.Jvm" />
         <item itemvalue="Application.InterruptedExceptionThread" />
-        <item itemvalue="Application.InterruptThread" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632559172594</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix2">
+      <created>1644304583919</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1644304583919</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,25 +235,42 @@
     <MESSAGE value="顺序执行" />
     <MESSAGE value="线程的中断与复位" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="fix2" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2004" height="229" key="GridCell.Tab.0.bottom" timestamp="1644304566614">
-      <screen x="-2560" y="-130" width="2048" height="1112" />
+    <state width="2004" height="229" key="GridCell.Tab.0.bottom" timestamp="1644543113489">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2004" height="229" key="GridCell.Tab.0.bottom/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1644304566614" />
-    <state width="2004" height="229" key="GridCell.Tab.0.center" timestamp="1644304566614">
-      <screen x="-2560" y="-130" width="2048" height="1112" />
+    <state width="2004" height="229" key="GridCell.Tab.0.bottom/0.0.2048.1112/-2560.-130.2048.1112@0.0.2048.1112" timestamp="1644543113489" />
+    <state width="2004" height="229" key="GridCell.Tab.0.center" timestamp="1644543113489">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2004" height="229" key="GridCell.Tab.0.center/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1644304566614" />
-    <state width="2004" height="229" key="GridCell.Tab.0.left" timestamp="1644304566614">
-      <screen x="-2560" y="-130" width="2048" height="1112" />
+    <state width="2004" height="229" key="GridCell.Tab.0.center/0.0.2048.1112/-2560.-130.2048.1112@0.0.2048.1112" timestamp="1644543113489" />
+    <state width="2004" height="229" key="GridCell.Tab.0.left" timestamp="1644543113489">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2004" height="229" key="GridCell.Tab.0.left/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1644304566614" />
-    <state width="2004" height="229" key="GridCell.Tab.0.right" timestamp="1644304566614">
-      <screen x="-2560" y="-130" width="2048" height="1112" />
+    <state width="2004" height="229" key="GridCell.Tab.0.left/0.0.2048.1112/-2560.-130.2048.1112@0.0.2048.1112" timestamp="1644543113488" />
+    <state width="2004" height="229" key="GridCell.Tab.0.right" timestamp="1644543113489">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2004" height="229" key="GridCell.Tab.0.right/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1644304566614" />
+    <state width="2004" height="229" key="GridCell.Tab.0.right/0.0.2048.1112/-2560.-130.2048.1112@0.0.2048.1112" timestamp="1644543113489" />
+    <state x="-2362" y="-36" key="MergeDialog" timestamp="1644304623623">
+      <screen x="-2560" y="-130" width="2048" height="1112" />
+    </state>
+    <state x="-2362" y="-36" key="MergeDialog/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1644304623623" />
+    <state x="-1901" y="187" key="MultipleFileMergeDialog" timestamp="1644304627544">
+      <screen x="-2560" y="-130" width="2048" height="1112" />
+    </state>
+    <state x="-1901" y="187" key="MultipleFileMergeDialog/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1644304627544" />
+    <state x="-1943" y="146" key="Vcs.Push.Dialog.v2" timestamp="1644304638773">
+      <screen x="-2560" y="-130" width="2048" height="1112" />
+    </state>
+    <state x="-1943" y="146" key="Vcs.Push.Dialog.v2/0.0.2048.1112/-2560.-130.2048.1112@-2560.-130.2048.1112" timestamp="1644304638773" />
     <state x="222" y="150" key="new project wizard" timestamp="1640223184473">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

@@ -21,6 +21,7 @@ public class ThreadDemo {
 
             return 1024;
         });
+
         new Thread(futureTask,"a").start();
 
         System.out.println("thread main:"+Thread.currentThread().getName()+"\t"+Thread.currentThread().isDaemon());
