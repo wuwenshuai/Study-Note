@@ -18,7 +18,7 @@ public class Demo3 {
 
     public static void main(String[] args) throws ParseException {
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10; i++) {
             new Thread(() -> {
                 try {
                     System.out.println(Thread.currentThread().getName()+"-"+parse("2021-10-22"));
@@ -27,7 +27,7 @@ public class Demo3 {
                 }finally {
                     SIMPLE_DATE_FORMAT_THREAD_LOCAL.remove();
                 }
-            }).start();
+            },"demo-"+i).start();
         }
     }
 
