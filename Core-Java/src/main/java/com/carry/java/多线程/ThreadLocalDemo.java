@@ -1,9 +1,13 @@
 package com.carry.java.多线程;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 
 public class ThreadLocalDemo {
     public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException, InterruptedException {
+        ArrayList<Object> objects = new ArrayList<>();
+        objects.add("a");
+
         Thread t = new Thread(() -> test("abc", false));
         t.start();
         t.join();
