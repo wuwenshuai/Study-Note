@@ -13,6 +13,7 @@
         <module>数据结构与算法</module>
         <module>kafka-demo</module>
         <module>设计模式</module>
+        <module>spring-source</module>
     </modules>
 
     <build>
