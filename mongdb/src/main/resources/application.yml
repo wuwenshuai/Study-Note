@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      host: 172.16.170.81
+      port: 27017
+      username: efficiency_reader
+      password: RUijq37e
+      database: efficiency_platform_db
+logging:
+  level:
+    org.springframework.data.mongodb.core: debug
+server:
+  port: 8082

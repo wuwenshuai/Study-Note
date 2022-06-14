@@ -7,9 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="kafka-demo" />
+        <module name="spring-source" />
+        <module name="mongdb" />
         <module name="数据结构与算法" />
         <module name="Core-Java" />
+        <module name="kafka-demo" />
         <module name="设计模式" />
       </profile>
     </annotationProcessing>
