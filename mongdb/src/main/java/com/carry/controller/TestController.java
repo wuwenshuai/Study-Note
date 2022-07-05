@@ -41,11 +41,11 @@ public class TestController {
         query.addCriteria(criteria);
 
         List<ReleaseDocument> all = mongoTemplate.find(query, ReleaseDocument.class,"ep_core_release");
-        all = all.stream().filter(item -> item.getProjectName() != null).collect(Collectors.toList());
-        Map<String, List<ReleaseDocument>> releaseDocumentGroupMap = all.stream()
-                .collect(Collectors.groupingBy(ReleaseDocument::getProjectName));
-
-        System.out.println(releaseDocumentGroupMap);
-        return "test";
+//        all = all.stream().filter(item -> item.getProjectName() != null).collect(Collectors.toList());
+//        Map<String, List<ReleaseDocument>> releaseDocumentGroupMap = all.stream()
+//                .collect(Collectors.groupingBy(ReleaseDocument::getProjectName));
+//
+//        System.out.println(releaseDocumentGroupMap);
+        return all.size()+"";
     }
 }

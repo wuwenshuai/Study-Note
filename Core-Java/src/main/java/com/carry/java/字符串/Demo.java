@@ -11,6 +11,8 @@ import java.util.Date;
 public class Demo {
 
     public static void main(String[] args) {
+
+        System.out.println("a,b,c".replaceAll(",",";"));
         int a = 122222;
         String releaseDateTemplate = "<tr style=\"height: 28px;\">\n" +
                 "<td style=\"width: 10.557%; height: 28px; background-color: #ced4d9;\"><strong><span lang=\"EN-US\" style=\"font-size: 15.0pt; font-family: 'Arial',sans-serif; mso-fareast-font-family: 宋体; color: blue; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA;\">Release Date</span></strong></td>\n" +

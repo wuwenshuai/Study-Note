@@ -16,6 +16,7 @@
         <module>spring-mvc-demo3</module>
         <module>spring-source</module>
         <module>mongdb</module>
+        <module>mongdb-java</module>
     </modules>
 
     <build>
