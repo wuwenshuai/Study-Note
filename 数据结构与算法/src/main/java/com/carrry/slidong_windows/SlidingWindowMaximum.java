@@ -50,7 +50,7 @@ public class SlidingWindowMaximum {
         //使用双向队列实现
         int[] result = new int[nums.length - k +1];
         // 定义双向队列
-        ArrayQueue<Object> deque = new ArrayQueue<>();
+        ArrayQueue<Object> deque = new ArrayQueue<>(1);
         return result;
     }
     public static int[] maxSlidingWindow1(int[] nums, int k) {
