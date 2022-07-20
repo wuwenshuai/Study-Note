@@ -17,6 +17,7 @@
         <module>spring-source</module>
         <module>mongdb</module>
         <module>mongdb-java</module>
+        <module>Redission</module>
     </modules>
 
     <build>
