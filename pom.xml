@@ -18,6 +18,7 @@
         <module>mongdb</module>
         <module>mongdb-java</module>
         <module>Redission</module>
+        <module>Canal</module>
     </modules>
 
     <build>

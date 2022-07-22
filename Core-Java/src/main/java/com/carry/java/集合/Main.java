@@ -20,6 +20,12 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
+
+
+        int i = "Aa".hashCode();
+        int a = "Bb".hashCode();
+        System.out.println(i);
+        System.out.println(a);
         List<String> list = Arrays.asList("a", "b", "c", "d", "a", "a", "d", "d");
         List<String> duplicate = getDuplicateElements(list);
         System.out.println("list 中重复的元素：" + duplicate);
