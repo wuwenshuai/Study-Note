@@ -17,4 +17,10 @@ package com.carrry.string;
  * 不能使用任何标准库的大数类型（比如 BigInteger）或直接将输入转换为整数来处理。
  */
 public class MultiplyStrings {
+
+    public static void main(String[] args) {
+
+
+        System.out.println("1111");
+    }
 }

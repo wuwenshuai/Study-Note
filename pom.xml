@@ -14,7 +14,6 @@
         <module>kafka-demo</module>
         <module>设计模式</module>
         <module>spring-mvc-demo3</module>
-        <module>spring-source</module>
         <module>mongdb</module>
         <module>mongdb-java</module>
         <module>Redission</module>

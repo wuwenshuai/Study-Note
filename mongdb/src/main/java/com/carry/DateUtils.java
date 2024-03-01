@@ -21,6 +21,7 @@ import java.util.SimpleTimeZone;
 public class DateUtils {
     /** * mongo 日期查询isodate * @param dateStr * @return */
     public static Date dateToISODate(String dateStr){
+
         //T代表后面跟着时间，Z代表UTC统一时间
         Date date = formatD(dateStr);
         SimpleDateFormat format =
