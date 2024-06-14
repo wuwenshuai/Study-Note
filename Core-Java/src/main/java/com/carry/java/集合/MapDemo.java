@@ -11,7 +11,11 @@ public class MapDemo {
 
         Map map = new HashMap<>();
 
-        ConcurrentHashMap<Object, Object> concurrentHashMap = new ConcurrentHashMap<>();
-        concurrentHashMap.put("a","b");
+        Object o1 = new Object();
+        Object o2 = o1;
+
+        map.put(o1,"1");
+        System.out.println(1111);
+        System.out.println(map.get(o2));
     }
 }

@@ -1,4 +1,4 @@
-package com.carry.java.多线程.阳哥多线程案例.预习版本.生产者消费者;
+package com.carry.java.多线程.阳哥多线程案例.预习版本.生产者消费者.syn版;
 
 /**
  * @author cw3k

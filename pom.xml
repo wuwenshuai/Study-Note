@@ -18,6 +18,10 @@
         <module>mongdb-java</module>
         <module>Redission</module>
         <module>Canal</module>
+        <module>netty-demo</module>
+        <module>test</module>
+        <module>Netty-Demo</module>
+        <module>Netty</module>
     </modules>
 
     <build>
