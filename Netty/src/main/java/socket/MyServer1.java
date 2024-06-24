@@ -8,6 +8,12 @@ import java.nio.channels.SocketChannel;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 存在两个阻塞：
+ * a. accept()
+ * b. read()
+ */
+
 public class MyServer1 {
 
     public static void main(String[] args) throws IOException {
@@ -22,7 +28,7 @@ public class MyServer1 {
         // 接受client的连接
         while (true) {
             // SocketChannel 代表服务端与client连接的一个通道
-            System.out.println("等待客户端连接...");
+            System.out.println(" ...");
             SocketChannel socketChannel = serverSocketChannel.accept(); // 阻塞 程序等待client
             System.out.println("客户端连接成功");
             channelList.add(socketChannel);
