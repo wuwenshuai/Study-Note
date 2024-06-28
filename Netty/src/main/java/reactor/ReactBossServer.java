@@ -16,40 +16,52 @@ public class ReactBossServer {
 
     private static final Logger log = LoggerFactory.getLogger(ReactBossServer.class);
 
+    public static void main(String[] args) throws IOException, InterruptedException {
+        log.debug("boss thread start ....");
 
-    public static void main(String[] args) throws IOException {
-        ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
-        serverSocketChannel.configureBlocking(false);
-        serverSocketChannel.bind(new InetSocketAddress(8000));
+        ServerSocketChannel ssc = ServerSocketChannel.open();
+        ssc.configureBlocking(false);
+        ssc.bind(new InetSocketAddress(8000));
+
         Selector selector = Selector.open();
-        serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
-        // Worker worker = new Worker("read-1");
-        // 模拟线程迟
-        Worker[] workers = new Worker[2];
+        ssc.register(selector, SelectionKey.OP_ACCEPT);
+
+        //模拟多线程的环境，在实际开发中，还是要使用线程池
+        /*
+        Worker worker = new Worker("worker1");
+        */
+
+
+        WorkerAble[] workers = new WorkerAble[2];
         for (int i = 0; i < workers.length; i++) {
-            workers[i] = new Worker("read-" + i);
+            workers[i] = new WorkerAble("worker - " + i);//worker-0 worker-1
         }
-        AtomicInteger index = new AtomicInteger(0);
+
+        AtomicInteger index = new AtomicInteger();
+
+
         while (true) {
             selector.select();
-            log.info("0000000000");
+
             Iterator<SelectionKey> iterator = selector.selectedKeys().iterator();
             while (iterator.hasNext()) {
-                SelectionKey scKey = iterator.next();
+                SelectionKey sscSelectionKey = iterator.next();
                 iterator.remove();
-                if (scKey.isAcceptable()) {
-                    SocketChannel socketChannel = serverSocketChannel.accept();
-                    socketChannel.configureBlocking(false);
-                    // 交给worke处理
-                   // socketChannel.register(selector, SelectionKey.OP_READ);
-                    // hash 取模
-                   // Worker worker = workers[Math.abs(socketChannel.hashCode() % workers.length)];
-                    workers[index.getAndIncrement()%workers.length].register(socketChannel);
-                   // worker.register(socketChannel);
-                    log.info("boss work register");
+
+                if (sscSelectionKey.isAcceptable()) {
+                    SocketChannel sc = ssc.accept();
+                    sc.configureBlocking(false);
+
+                    //sc.register(selector, SelectionKey.OP_READ);
+                    log.debug("boss invoke worker register ...");
+                    //worker-0 worker-1 worker-0 worker-1
+                    //hash取摸    x%2= 0  1 [0,1,0,1]
+                    workers[index.getAndIncrement()% workers.length].register(sc);
+                    log.debug("boss invoked worker register");
                 }
             }
         }
+
 
     }
 }
