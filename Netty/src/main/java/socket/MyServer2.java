@@ -39,19 +39,27 @@ public class MyServer2 {
                     ServerSocketChannel channel = (ServerSocketChannel) key.channel();
                     SocketChannel sc = channel.accept();
                     sc.configureBlocking(false);
-                    SelectionKey scKey = sc.register(selector, 0, null);
+                    // channel注册到selector中,channe和buffer绑定
+                    ByteBuffer buffer = ByteBuffer.allocate(5);
+                    SelectionKey scKey = sc.register(selector, 0, buffer);
                     scKey.interestOps(SelectionKey.OP_READ);
                 } else if (key.isReadable()) {
-                    // SocketChannel 负责读写
-                    SocketChannel channel = (SocketChannel) key.channel();
-                    ByteBuffer buffer = ByteBuffer.allocate(5);
-                    int read = channel.read(buffer);
-                    if (read == -1) {
+                    try {
+                        // SocketChannel 负责读写
+                        SocketChannel channel = (SocketChannel) key.channel();
+                      //  ByteBuffer buffer = ByteBuffer.allocate(5);
+                        ByteBuffer buffer = (ByteBuffer) key.attachment();
+                        int read = channel.read(buffer);
+                        if (read == -1) {
+                            key.cancel();
+                        } else {
+                            buffer.flip();
+                            System.out.println();
+                            System.out.println("Charset.defaultCharset().decode(buffer).toString() = " + Charset.defaultCharset().decode(buffer).toString());
+                        }
+                    } catch (IOException e) {
+                        System.out.println("error");
                         key.cancel();
-                    } else {
-                        buffer.flip();
-                        System.out.println();
-                        System.out.println("Charset.defaultCharset().decode(buffer).toString() = " + Charset.defaultCharset().decode(buffer).toString());
                     }
                 }
 

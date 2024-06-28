@@ -5,6 +5,7 @@ import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
+import java.nio.charset.Charset;
 
 public class Client {
 
@@ -17,6 +18,15 @@ public class Client {
         // 设置服务端的监听端口
         socketChannel.connect(new InetSocketAddress(8000));
         System.out.println("-----------------------");
-        socketChannel.write(ByteBuffer.wrap(new byte[]{1,2,3,4,5,6,7,8,9,10}));
+
+        socketChannel.write(Charset.defaultCharset().encode("aaaaaa\n"));
+        System.out.println("write");
+//        while (true) {
+//            ByteBuffer buffer = ByteBuffer.allocate(1024);
+//            int read = socketChannel.read(buffer);
+//            System.out.println("read:"+read);
+//            buffer.clear();
+//        }
+
     }
 }
