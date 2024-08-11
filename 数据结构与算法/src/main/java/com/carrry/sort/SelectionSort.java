@@ -25,20 +25,17 @@ public class SelectionSort {
 
         for (int i = 0; i < arr.length - 1; i++) {   // i --  n-1
             int minIndex = i;
-            for (int j = i + 1; j < arr.length - 1; j++) {  // i---n-1找到最小值的下标
-                if (arr[j] < arr[minIndex]) {
-                    // 做替换
-                    swap(arr, i, j);
-                }
+            for (int j = i + 1; j < arr.length; j++) {  // i---n-1找到最小值的下标
+                minIndex = arr[j] < arr[minIndex] ? j : minIndex;
             }
+            swap(arr, i, minIndex);
         }
-
     }
 
     public static void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
+        int tmp = arr[i];
         arr[i] = arr[j];
-        arr[j] = temp;
+        arr[j] = tmp;
     }
 }
 
